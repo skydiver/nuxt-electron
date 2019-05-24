@@ -5,10 +5,11 @@
   "author": "Martín M.",
   "license": "MIT",
   "private": true,
-  "main": "main.js",
+  "main": "electron/main.js",
   "scripts": {
-    "dev": "cross-env NODE_ENV=DEV electron .",
-    "build": "nuxt build && electron-builder",
+    "dev": "concurrently nuxt \"node electron/wait-nuxt.js\"",
+    "electron-dev": "cross-env NODE_ENV=DEV electron .",
+    "electron-build": "nuxt build && electron-builder",
     "nuxt-dev": "nuxt",
     "nuxt-build": "nuxt build",
     "nuxt-start": "nuxt start",
@@ -24,6 +25,7 @@
   "devDependencies": {
     "@nuxtjs/eslint-config": "^0.0.1",
     "babel-eslint": "^10.0.1",
+    "concurrently": "^4.1.0",
     "electron": "^5.0.2",
     "electron-builder": "^20.40.2",
     "electron-devtools-installer": "^2.2.4",
