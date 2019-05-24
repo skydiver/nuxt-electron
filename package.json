@@ -1,7 +1,7 @@
 {
   "name": "nuxt-electron",
   "version": "1.0.0",
-  "description": "Nuxt.js + Electron",
+  "description": "Nuxt.js + Electron starter template",
   "author": "Martín M.",
   "license": "MIT",
   "private": true,
