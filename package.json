@@ -48,7 +48,7 @@
   "build": {
     "extends": null,
     "productName": "nuxt-electron",
-    "appId": "dev.skydiver.nuxt-electron",
+    "appId": "com.example.nuxt-electron",
     "electronVersion": "3.0.12",
     "files": [
       "build/**/*",
