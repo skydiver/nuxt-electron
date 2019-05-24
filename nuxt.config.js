@@ -65,6 +65,6 @@ export default {
     }
   },
   generate: {
-    dir: 'build'
+    dir: '.nuxt-build'
   }
 };

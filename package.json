@@ -51,11 +51,12 @@
     "appId": "com.example.nuxt-electron",
     "electronVersion": "5.0.2",
     "files": [
-      "build/**/*",
+      ".nuxt-build/**/*",
       "electron/*"
     ],
     "directories": {
-      "buildResources": "static"
+      "buildResources": "static",
+      "output": ".dist"
     },
     "mac": {
       "target": [
