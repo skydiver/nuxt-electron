@@ -24,9 +24,9 @@ $ npm run electron-build
 ```
 
 ## Additional notes
-You need to configure the `build` section on `package.json`.
+By default, only Mac app is generated on `.dist` folder.
 
-By default, only Mac app is generated.
+Remember to update/extend your build settings on `electron-builder.yml`.
 
 More info: https://github.com/electron-userland/electron-builder
 
