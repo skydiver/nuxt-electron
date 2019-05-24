@@ -50,7 +50,7 @@
     "appId": "dev.skydiver.nuxt-electron",
     "electronVersion": "3.0.12",
     "files": [
-      "dist/nuxt/**/*",
+      "build/**/*",
       "electron/*"
     ],
     "directories": {
