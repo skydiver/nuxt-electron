@@ -3,12 +3,16 @@
   "version": "1.0.0",
   "description": "Nuxt.js + Electron",
   "author": "Martín M.",
+  "license": "MIT",
   "private": true,
+  "main": "main.js",
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate",
+    "dev": "cross-env NODE_ENV=DEV electron .",
+    "build": "nuxt build && electron-builder",
+    "nuxt-dev": "nuxt",
+    "nuxt-build": "nuxt build",
+    "nuxt-start": "nuxt start",
+    "nuxt-generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint"
   },
@@ -18,21 +22,30 @@
     "@nuxtjs/axios": "^5.5.1"
   },
   "devDependencies": {
-    "nodemon": "^1.19.0",
     "@nuxtjs/eslint-config": "^0.0.1",
     "babel-eslint": "^10.0.1",
+    "electron": "^5.0.2",
+    "electron-builder": "^20.40.2",
+    "electron-devtools-installer": "^2.2.4",
     "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.3.0",
     "eslint-config-standard": ">=12.0.0",
+    "eslint-loader": "^2.1.2",
     "eslint-plugin-import": ">=2.17.2",
     "eslint-plugin-jest": ">=22.6.4",
     "eslint-plugin-node": ">=9.1.0",
     "eslint-plugin-nuxt": ">=0.4.3",
+    "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-promise": ">=4.1.1",
     "eslint-plugin-standard": ">=4.0.0",
-    "eslint-loader": "^2.1.2",
     "eslint-plugin-vue": "^5.2.2",
-    "eslint-config-prettier": "^4.3.0",
-    "eslint-plugin-prettier": "^3.1.0",
+    "nodemon": "^1.19.0",
     "prettier": "^1.17.1"
+  },
+  "build": {
+    "appId": "dev.skydiver.nuxt-electron",
+    "directories": {
+      "buildResources": "static"
+    }
   }
 }
