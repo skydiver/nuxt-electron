@@ -26,7 +26,7 @@ const _NUXT_URL_ = `http://localhost:3000`;
 // console.log(`Nuxt working on ${_NUXT_URL_}`);
 
 const config = {};
-config.dev = true;
+config.dev = false;
 
 /*
  ** Electron
@@ -39,6 +39,7 @@ const newWin = () => {
   });
   win.maximize();
   win.on('closed', () => (win = null));
+  win.webContents.openDevTools();
   if (config.dev) {
     // Install vue dev tool and open chrome dev tools
     const {
