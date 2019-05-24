@@ -45,9 +45,23 @@
     "prettier": "^1.17.1"
   },
   "build": {
+    "extends": null,
+    "productName": "nuxt-electron",
     "appId": "dev.skydiver.nuxt-electron",
+    "electronVersion": "3.0.12",
+    "files": [
+      "dist/nuxt/**/*",
+      "electron/*"
+    ],
     "directories": {
       "buildResources": "static"
+    },
+    "mac": {
+      "target": [
+        {
+          "target": "dir"
+        }
+      ]
     }
   }
 }
