@@ -49,7 +49,7 @@
     "extends": null,
     "productName": "nuxt-electron",
     "appId": "com.example.nuxt-electron",
-    "electronVersion": "3.0.12",
+    "electronVersion": "5.0.2",
     "files": [
       "build/**/*",
       "electron/*"
