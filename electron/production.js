@@ -14,7 +14,6 @@ const loader = async () => {
   });
   mainWindow.maximize();
   mainWindow.on('closed', () => (mainWindow = null));
-  mainWindow.webContents.openDevTools();
 
   await loadURL(mainWindow);
 };
