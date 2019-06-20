@@ -19,31 +19,31 @@
     "clean": "rm -rf .dist .nuxt-build"
   },
   "dependencies": {
-    "@nuxtjs/axios": "^5.5.1",
+    "@nuxtjs/axios": "^5.5.4",
     "cross-env": "^5.2.0",
-    "electron-serve": "^0.2.1",
-    "nuxt": "^2.7.1"
+    "electron-serve": "^0.3.0",
+    "nuxt": "^2.8.1"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^0.0.1",
-    "babel-eslint": "^10.0.1",
+    "babel-eslint": "^10.0.2",
     "concurrently": "^4.1.0",
-    "electron": "^5.0.2",
-    "electron-builder": "^20.40.2",
+    "electron": "^5.0.4",
+    "electron-builder": "^20.43.0",
     "electron-devtools-installer": "^2.2.4",
     "eslint": "^5.16.0",
-    "eslint-config-prettier": "^4.3.0",
+    "eslint-config-prettier": "^5.0.0",
     "eslint-config-standard": ">=12.0.0",
     "eslint-loader": "^2.1.2",
-    "eslint-plugin-import": ">=2.17.2",
-    "eslint-plugin-jest": ">=22.6.4",
+    "eslint-plugin-import": ">=2.17.3",
+    "eslint-plugin-jest": ">=22.7.0",
     "eslint-plugin-node": ">=9.1.0",
     "eslint-plugin-nuxt": ">=0.4.3",
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-promise": ">=4.1.1",
     "eslint-plugin-standard": ">=4.0.0",
     "eslint-plugin-vue": "^5.2.2",
-    "nodemon": "^1.19.0",
-    "prettier": "^1.17.1"
+    "nodemon": "^1.19.1",
+    "prettier": "^1.18.2"
   }
 }
