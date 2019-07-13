@@ -1,15 +1,19 @@
 # nuxt-electron
 > Nuxt.js + Electron starter template
 
+
 ## Intro
 Electron boilerplate using latest version of Nuxt.js as a SPA.
 
+
 ## Installation
 ```
-$ git clone https://github.com/skydiver/nuxt-electron.git your-project
-$ cd your-project
+$ npx create-project my-project-name skydiver/nuxt-electron --description "My new project" --author "Martín M."
+$ cd my-project-name
 $ npm install
 ```
+
+* Alternatively, you can clone this repo `git clone https://github.com/skydiver/nuxt-electron.git my-project-name`
 
 
 ## Starting development
@@ -22,6 +26,7 @@ $ npm run dev
 ```
 $ npm run electron-build
 ```
+
 
 ## Additional notes
 By default, only Mac app is generated on `.dist` folder.
