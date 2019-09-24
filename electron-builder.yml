@@ -1,7 +1,7 @@
 productName: "nuxt-electron"
 appId: "com.example.nuxt-electron"
 
-electronVersion: "6.0.0"
+electronVersion: "6.0.10"
 
 files:
   - ".nuxt-build/**/*"
