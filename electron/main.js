@@ -17,6 +17,7 @@ const createWindow = async () => {
   await app.whenReady();
 
   mainWindow = new BrowserWindow({
+    backgroundColor: '#FFF',
     icon: path.join(__dirname, 'static/icon.png')
   });
 
