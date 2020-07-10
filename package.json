@@ -22,10 +22,11 @@
     "@nuxtjs/axios": "^5.12.0",
     "cross-env": "^7.0.2",
     "electron-serve": "^1.0.0",
-    "nuxt": "^2.13.3"
+    "nuxt": "^2.13.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^3.0.0",
+    "@nuxtjs/eslint-module": "^2.0.0",
     "babel-eslint": "^10.1.0",
     "concurrently": "^5.2.0",
     "electron": "^9.1.0",
