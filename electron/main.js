@@ -18,7 +18,6 @@ const createWindow = async () => {
 
   mainWindow = new BrowserWindow({
     backgroundColor: '#FFF',
-    icon: path.join(__dirname, 'static/icon.png')
   });
 
   mainWindow.maximize();
@@ -46,14 +45,14 @@ const installVueDevTools = () => {
   if (isDev) {
     const {
       default: installExtension,
-      VUEJS_DEVTOOLS
+      VUEJS_DEVTOOLS,
     } = require('electron-devtools-installer');
     installExtension(VUEJS_DEVTOOLS.id)
       .then(() => {
         mainWindow.webContents.openDevTools();
       })
       // eslint-disable-next-line no-console
-      .catch(err => console.log('An error occurred: ', err));
+      .catch((err) => console.log('An error occurred: ', err));
     mainWindow.webContents.openDevTools();
   }
 };
