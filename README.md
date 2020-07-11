@@ -8,13 +8,8 @@ Electron boilerplate using latest version of Nuxt.js as a SPA.
 
 ## Installation
 ```
-$ npx create-project my-project-name skydiver/nuxt-electron --description "My new project" --author "Martín M."
-$ cd my-project-name
-$ npm install
+git clone https://github.com/skydiver/nuxt-electron.git my-project-name
 ```
-
-* Alternatively, you can clone this repo `git clone https://github.com/skydiver/nuxt-electron.git my-project-name`
-
 
 ## Starting development
 ```
