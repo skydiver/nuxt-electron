@@ -1,4 +1,3 @@
-const path = require('path');
 const { app, BrowserWindow } = require('electron');
 
 const isDev = process.env.NODE_ENV === 'DEV';
